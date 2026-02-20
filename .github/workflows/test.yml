@@ -1,4 +1,4 @@
-name: Cache Test
+name: Cache and Email Test
 
 on:
   push:
@@ -21,3 +21,6 @@ jobs:
       - name: prime-cache-dd0ff5f
         run: |
           echo "Cache hit? ${{ steps.cache-step.outputs.cache-hit }}"
+
+      - name: 23f3003316@ds.study.iitm.ac.in
+        run: echo "Email step exists"
